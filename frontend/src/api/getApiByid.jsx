@@ -1,0 +1,1 @@
+export const GetApiById = "https://api.themoviedb.org/3/movie/"

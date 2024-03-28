@@ -1,0 +1,785 @@
+.hero{
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+gap: 60px;
+}
+#frontimg{
+    filter: blur(5px);
+
+}
+.iframs{
+width: 500px;
+height: 300px;
+}
+.frontimgs{
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 1900px;
+}
+.solidReds{
+    border: 1px solid rgb(255, 0, 0);
+    /* width: 0%; */
+    height: 130%;
+}
+.smallimg{
+    width: 400px;
+    box-shadow: 0 0 50px #555555;
+    border-radius: 10px;
+}
+.smals{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tagline {
+    font-size: 24px;
+    width: 296px;
+}
+.someofTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+.arrowse{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 80px;
+    gap: 60px;
+}
+.rarings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.alotOfTexts{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    transform: translate(0,5%);
+}
+.rarings{
+    position: absolute;
+        /* margin-bottom: 10px; */
+        top: 2%;
+        /* left: 10%; */
+       
+}
+.upe{
+     display: flex;
+     align-items: center;
+        justify-content: space-between;
+        gap: 270px;
+}
+.rar{
+    font-size: 25px;
+    font-weight: 800;
+}
+.stars{
+    font-size: 20px;
+    color: gold;
+}
+.smal{
+    position: relative;
+}
+.genrs{
+    display: flex;
+    align-items: center;
+        /* gap: 10px; */
+    gap: 4px;
+}
+
+
+.dates{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+.overs{
+    background-color: rgba(0, 0, 0, 0.596);
+    
+    padding: 10px;
+    font-size: 27px;
+    width: 1000px;
+}
+.upserss{
+    display: flex;
+    margin-left: -1399px;
+    gap: 10px;
+    margin-bottom: 10px;
+    
+}
+.hero {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 60px;
+    margin-left: 30px;
+    /* position: absolute; */
+    margin-top: 30px;
+}
+.uphero {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    /* height: 150vh; */
+    gap: 200px;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+.solidBlueess{
+    border: 1px solid rgb(0, 89, 255);
+        width: 70%;
+        margin-bottom: 10px;
+
+} 
+.AlltextsAndInputs{
+    display: flex;
+    flex-direction: column;
+   
+}
+.theAllinputText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.title{
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 10%;
+}
+.genrs {
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 18%;
+    border-radius: 7px;
+    padding: 5px 10px;
+}
+.textsAndinputs{
+    margin-left: 10px;
+   position: relative;
+   display: flex;
+   /* flex-direction: column; */
+   /* justify-content: space-between; */
+   gap: 155px;
+   /* align-items: center; */
+   margin-top: -275px;
+   z-index: 10;
+}
+
+.textpara{
+    width: 1300px;
+    /* height: 100px; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.trashbtn{
+    display: flex;
+    
+    justify-content: flex-end;
+}
+.solidRedss {
+    border: 2px solid rgb(0, 140, 255);
+    /* width: 0%; */
+    height: 78%;
+    z-index: 1;
+}
+.nameAndTextAndRaiting {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.151);
+    height: 100%;
+  width: 100%;
+}
+.textReqRed{
+    color: rgb(255, 26, 26);
+    font-weight: 800;
+    font-size: 17px;
+}
+.errorInsideMovie{
+    color: rgb(255, 26, 26);
+    font-weight: 800;
+    font-size: 17px;
+}
+.textReqGreen{
+    color: rgb(114, 255, 114);
+    font-weight: 800;
+    font-size: 17px;
+}
+.errorInsideMovie{
+    width: 110%;
+}
+.containerText{
+    width:15%;
+}
+.textreq{
+    display: flex;
+}
+.theTextArea{
+    padding: 5px 10px;
+    resize: none;
+    background-color: rgba(0, 0, 0, 0.315);
+    border: none;
+    outline: none;
+    color: white;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.theTextArea.red{
+    box-shadow: rgba(255, 0, 0, 0.288) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.theTextArea.green{
+    box-shadow: rgba(0, 255, 157, 0.288) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+.theTextArea::placeholder{
+    font-size: 15px;
+}
+.submitRev{
+    padding: 8px 23px;
+    width: 140%;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #6a5f923f;
+    color: white;
+    transition: 0.5s;
+}
+
+.submitRev:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+@media(min-width:320px){
+    .tagline {
+        text-align: center;
+    }
+    .video{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .overs {
+        background-color: rgba(0, 0, 0, 0.144);
+        text-align: center;
+    }
+    .genrs {
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        background-color: transparent;
+    }
+    .title {
+        background-color: transparent;
+        width: 100%;
+    }
+    .textreq {
+        margin-bottom: 20px;
+    }
+    .smal {
+        position: relative;
+        display: flex;
+        
+        justify-content: center;
+    }
+    .uphero {
+        display: flex;
+        height: 130vh;
+        gap: 250px;
+        flex-direction: column;
+        
+    }
+    .frontimgs{
+        width: 1px;
+        height: 0px;
+    }
+   
+    .upserss {
+        display: flex;
+        margin-left: -189px;
+        gap: 6px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    .smals {
+        
+        gap: 44px;
+    }
+    
+   
+    .arrowse {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        margin-top: 244px;
+        margin-bottom: 10px;
+        gap: 60px;
+    }
+    .thetitles{
+        text-align: center;
+    }
+    .lolo{
+        size: 10px;
+    }
+    .solidReds {
+        border: 1px solid rgb(255, 0, 0);
+        width: 70%;
+        /* margin-left: -100px; */
+        height: 150%;
+    }
+    .overs{
+        width: auto;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+    .hero {
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 170vh;
+        gap: 60px;
+        margin-left: 10px;
+        /* position: absolute; */
+        margin-top: 0px;
+    }
+    .textsAndinputs {
+        margin-left: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        gap: 0px;
+        /* align-items: center; */
+        margin-top: 0px;
+        z-index: 10;
+    }
+    .errorInsideMovie {
+        width: 140%;
+    }
+    
+    .textpara {
+        font-weight: 800;
+        width: 100%;
+        /* height: 100px; */
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .submitRev {
+        padding: 8px 23px;
+        width: 140%;
+        height: 40px;
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        background-color: #6a5f923f;
+        color: white;
+        transition: 0.5s;
+    }
+    .theTextArea {
+        padding: 5px 10px;
+        resize: none;
+        background-color: rgba(0, 0, 0, 0.315);
+        border: none;
+        outline: none;
+        color: white;
+        transition: 0.5s;
+        border-radius: 10px;
+        width: 140%;
+    }
+    .containerText {
+        width: 70%;
+    }
+    .smallimg{
+        width: 250px;
+    }
+    .upe{
+        gap: 130px;
+    }
+    .rarings{
+        position: absolute;
+        /* left: 7%; */
+    }
+    .solidRedss {
+        border: 1px solid rgb(0, 140, 255);
+        width: 90%;
+        /* height: 78%; */
+        z-index: 1;
+    }
+    .iframs{
+        width: auto;
+    }
+    .rarr{
+        font-size: 19px;
+    }
+}
+@media(min-width:375px){
+    .iframs {
+        width: 100%;
+        
+    }
+}
+@media(min-width:425px){
+    .textpara {
+        font-weight: 800;
+        font-size: 17px;
+    }
+}
+@media(min-width:549px){
+    .smallimg {
+        width: 280px;
+    }
+    .iframs {
+        width: 400px;
+    }
+}
+@media(min-width:700px){
+    .uphero {
+        display: flex;
+        height: 130vh;
+        gap: 250px;
+        flex-direction: column;
+        /* align-content: space-between; */
+    }
+   .textsAndinputs{
+        gap: 20px;
+   }
+    .iframs {
+        width: 500px;
+        
+       
+    }
+    .video{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .reqChara{
+        font-size: 18px;
+    }
+    .textReqRed{
+        font-size: 18px;
+
+    }
+    
+    .errorInsideMovie {
+        font-size: 19px;
+    }
+    .theTextArea{
+        padding: 10px;
+        font-size: 17px;
+    }
+}
+@media(min-width:900px){
+    
+    .frontimgs {
+        width: 100%;
+        height: auto;
+    }
+    .smallimg {
+        width: 230px;
+    }
+    
+    .iframs {
+        width: 400px;
+        height: 250px;
+    }
+    .genrs {
+        
+        justify-content:flex-start;
+    }
+    .overs {
+        text-align: justify;
+        width: 100%;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+    .uphero {
+        display: flex;
+        /* height: 20vh; */
+        gap: 350px;
+        flex-direction: column;
+        /* align-content: space-between; */
+    }
+    .upe {
+        gap: 120px;
+    }
+    
+    .alotOfTexts {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        transform: translate(0, 30%);
+    }
+    .solidRedss {
+        border: 1px solid rgb(0, 140, 255);
+        width: 0%;
+        height: 300%;
+        z-index: 1;
+    }
+    .hero {
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        height: 30vh;
+        gap: 20px;
+        margin-left: 10px;
+        /* position: absolute; */
+        margin-top: 0px;
+    }
+}
+@media(min-width:1024px){
+    .alotOfTexts {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        transform: translate(0, 28%);
+    }
+    .title {
+        background-color: #0000003b;
+        width: 24%;
+        padding: 7px;
+        border-radius: 7px;
+        font-size: 20px;
+    }
+    .iframs {
+        width: 400px;
+        height: 180px;
+    }
+    .textsAndinputs {
+        margin-left: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        gap: 15px;
+        /* align-items: center; */
+        margin-top: -275px;
+        z-index: 10;
+    }
+    .uphero {
+        gap: 650px;
+        height: 100vh;
+       
+    }
+    .theTextArea {
+        padding: 5px 10px;
+        width:fit-content;
+        resize: none;
+        background-color: rgba(0, 0, 0, 0.315);
+        border: none;
+        outline: none;
+        color: white;
+        transition: 0.5s;
+        border-radius: 10px;
+    }
+    .submitRev {
+        padding: 8px 23px;
+        width: 490px;
+        height: 40px;
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        background-color: #6a5f923f;
+        color: white;
+        transition: 0.5s;
+    }
+    .nameAndTextAndRaiting {
+        border-radius: 7px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.151);
+        height: auto;
+        width: 100%;
+    }
+    .solidRedss {
+        border: 1px solid rgb(0, 140, 255);
+        width: 0%;
+        height: 700px;
+        z-index: 1;
+    }
+    .formEdit{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(min-width:1280px){
+    .uphero {
+        gap: 440px;
+        height: 60vh;
+    }
+    .theTextArea {
+        padding: 5px 10px;
+        resize: none;
+        background-color: rgba(0, 0, 0, 0.315);
+        border: none;
+        outline: none;
+        color: white;
+        transition: 0.5s;
+        width:fit-content;
+        border-radius: 10px;
+    }
+    .solidRedss {
+        border: 1px solid rgb(0, 140, 255);
+        width: 0%;
+        height: 240%;
+        z-index: 1;
+    }
+   
+    .genrs {
+        width: 25%;
+        padding: 7px;
+        border-radius: 7px;
+        background-color: rgba(0, 0, 0, 0.315);
+    }
+    
+    .hero {
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        height: 50vh;
+        gap: 20px;
+        margin-left: 10px;
+        /* position: absolute; */
+        margin-top: 0px;
+    }
+    .textsAndinputs {
+
+        gap: 105px;
+    
+    }
+    .textsAndinputs {
+        margin-left: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        gap: 50px;
+        /* align-items: center; */
+        margin-top: 0px;
+        z-index: 10;
+    }
+    .submitRev {
+        padding: 8px 23px;
+        width: 490px;
+        height: 40px;
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        background-color: #6a5f923f;
+        color: white;
+        transition: 0.5s;
+    }
+    .errorInsideMovie {
+        font-size: 19px;
+        width: 60%;
+    }
+}
+@media(min-width:1484px){
+    .iframs {
+        width: 550px;
+        height: 350px;
+    }
+    .solidRedss {
+        border: 1px solid rgb(0, 140, 255);
+        width: 0%;
+        height: 290%;
+        z-index: 1;
+    }
+}
+@media(min-width:1536px){
+    .uphero {
+        gap: 550px;
+        height: 60vh;
+    }
+    
+        .upserss {
+            margin-left: -1200px;
+        }
+    
+}
+@media(min-width:1685px){
+    .uphero {
+        gap: 670px;
+        height: 60vh;
+    }
+    .hero {
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        height: 50vh;
+        gap: 60px;
+        margin-left: 10px;
+        /* position: absolute; */
+        margin-top: 0px;
+    }
+    .smallimg {
+        width: 350px;
+    }
+    .upe {
+        gap: 240px;
+    }
+    .title {
+        background-color: rgba(0, 0, 0, 0.274);
+        width: 23%;
+    }
+    .genrs{
+        background-color: rgba(0, 0, 0, 0.274);
+        width:18%;
+        border-radius: 7px;
+    }
+    .overs {
+        text-align: justify;
+        width: 100%;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+}
+@media(min-width:1921px){
+    .uphero {
+        gap: 900px;
+        height: 60vh;
+    }
+    .containerText {
+        width: 30%;
+    }
+}
