@@ -1,0 +1,102 @@
+.allNav{
+    background-color: #013f5786;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    z-index: 1;
+    border-radius: 10px;
+    width: 100%;
+}
+.potatomovies{
+    font-size: 25px;
+    font-weight: 800;
+}
+.downNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.icon{
+    font-size: 22px;
+    background-color: #001a24;
+    
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.icon:hover{
+    background-color: #006086;
+
+}
+.downNavs{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    
+    justify-content: center;
+}
+.wel{
+    font-size: 18px;
+}
+.icon{
+    cursor: pointer;
+}
+@media(min-width:320px){
+    .potatomovies{
+        font-size: 15px;
+    }
+    .downNav{
+        gap: 10px;
+    }
+    .icon {
+        font-size: 18px;
+        background-color: #001a24;
+        padding: 10px 15px;
+        border-radius: 8px;
+        
+    }
+    .allNav {
+        background-color: #013f5786;
+        padding: 10px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 90px;
+        z-index: 1;
+        border-radius: 0px;
+        width: 100%;
+    }
+}
+@media(min-width:549px){
+    .potatomovies{
+        font-size: 20px;
+    }
+    .icon {
+        font-size: 20px;
+        background-color: #001a24;
+        padding: 10px 15px;
+        border-radius: 8px;
+        
+    }
+}
+@media(min-width:900px){
+    .potatomovies{
+        font-size: 25px;
+    }
+    .downNav {
+        gap: 20px;
+    }
+    .icon {
+        font-size: 23px;
+        background-color: #001a24;
+        padding: 10px 15px;
+        border-radius: 8px;
+    }
+    
+}

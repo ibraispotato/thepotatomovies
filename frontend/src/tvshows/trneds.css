@@ -1,0 +1,22 @@
+.solidBlue{
+    border: 1px solid rgb(0, 153, 255);
+}
+.solidBlues{
+    border: 1px solid rgb(0, 153, 255);
+        height: 60%;
+}
+.loads{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 45%;
+    top: 35%;
+    font-size: 100px;
+    /* color: yellow; */
+}
+.lele{
+    font-size: 100px;
+    /* color: yellow; */
+
+}
