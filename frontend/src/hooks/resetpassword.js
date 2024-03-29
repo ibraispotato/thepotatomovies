@@ -10,7 +10,7 @@ export const ResetPassword = () => {
     const { token } = useParams()
     const navigates = useNavigate()
 
-    // console.log(token)
+ 
     const reset = async (password) => {
         setLoading(true)
         setError(null)
@@ -20,7 +20,7 @@ export const ResetPassword = () => {
             body: JSON.stringify({password})
         })
         const json = await response.json()
-        console.log(json)
+        
         if (!response.ok) {
             setLoading(false)
             setError(json.error)

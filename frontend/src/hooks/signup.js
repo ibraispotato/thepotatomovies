@@ -13,7 +13,7 @@ export const Signup = () => {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({username,email,password})
         })
-        console.log(response)
+        (response)
         const json = await response.json()
         if (!response.ok) {
             setLoading(false)

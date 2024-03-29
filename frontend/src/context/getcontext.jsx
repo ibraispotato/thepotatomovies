@@ -23,7 +23,7 @@ export const GetContext = ({ children }) => {
     useEffect(() => {
         api()
     }, [])
-    // console.log(trendAPi)
+   
     ////////////////////////////////////////////////////////////////////////////////////////////////
     const [topApi,setTopApi] = useState([])
     const topApis = async () => {

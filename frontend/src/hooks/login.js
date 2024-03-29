@@ -11,7 +11,7 @@ export const Logines = () => {
             body: JSON.stringify({email,password})
         })
         const json = await response.json()
-        console.log(response)
+        
         if (!response.ok) {
             setLoading(false)
             setError(json.error)

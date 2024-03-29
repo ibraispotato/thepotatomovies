@@ -20,7 +20,7 @@
                 }
                 logoutERS()
             }
-            // console.log(user)
+            
             const [click, setClick] = useState(false)
             
         return (

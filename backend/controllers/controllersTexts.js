@@ -16,7 +16,7 @@ const CreateText = async (req,res) => {
     const { keys } = req.headers
 
 
-        // console.log(authorization.split(" ")[2])
+
     try {
         const theId = authorization.split(" ")[2]
         const TheTokenOfTheUser = keys

@@ -7,7 +7,7 @@ const addSchema = async (req, res) => {
     const user_id = req.user._id
     // const ComboUserIdAndIdMovie = req.user._id+theId
 
-    // console.log(ComboUserIdAndIdMovie)
+
     try {
        
         const findones = await FavText.findOne({ theId })
