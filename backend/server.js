@@ -13,7 +13,7 @@ const showRoutes = require('./routers/showrouter')
 const app = express();
 app.use(express.json());
 const cors = require('cors');
-app.use(cors({origin: 'http://localhost:3000'}))
+app.use(cors())
 app.use((req,res,next) => {
     console.log(req.path , req.method)
     next();
