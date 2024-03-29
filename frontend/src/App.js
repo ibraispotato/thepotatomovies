@@ -39,12 +39,12 @@ function App() {
             <Routes>
              
               <Route path="/" element={show ? <TrendShow setShow={setShow} /> : <TrendApi setShow={setShow} />} />
-              <Route path="thepotatomovies/movie/:id" element={<InsideMovies />} />
+              <Route path="/movie/:id" element={<InsideMovies />} />
               <Route path="/movies" element={<Movie />} />
               <Route path="/forgotpassword" element={<Forgot />} />
               <Route path="/register/resetpassword/:token" element={<Reset />} />
-              <Route path="/login" element={!user ? <Login /> : <Navigate to={"/thepotatomovies"}/>} />
-              <Route path="/signup" element={!user ? <SignUP /> : <Navigate to={"/thepotatomovies"}/>} />
+              <Route path="/login" element={!user ? <Login /> : <Navigate to={"/"}/>} />
+              <Route path="/signup" element={!user ? <SignUP /> : <Navigate to={"/"}/>} />
               <Route path="/movies/gener/:generes" element={<RollMovies />} />
               <Route path="/movies/gener/:generes/movie/:id" element={<InsideMovies />} />
               <Route path="/series/gener/:generes/show/:id" element={<InsideShow />} />
@@ -62,7 +62,7 @@ function App() {
               <Route path="/series" element={<Shows />} />
               <Route path="/series/gener/:gen" element={<RollShows />} />
               <Route path="shows/page/gener/:generes/:page/show/:id" element={<InsideShow />} />
-              <Route path="thepotatomovies/show/:id" element={<InsideShow />} />
+              <Route path="/show/:id" element={<InsideShow />} />
               <Route path="series/show/:id" element={<InsideShow />} />
               <Route path="series/:search" element={<SearchShows />} />
               <Route path="favorite/show/:id" element={<InsideShow />}/>

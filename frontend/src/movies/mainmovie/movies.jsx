@@ -130,7 +130,7 @@ useEffect(() => {
 
             </div>
             <div className="arrows">
-              <Link to={"/thepotatomovies"}>
+              <Link to={"/"}>
                 <FontAwesomeIcon className="arrow" icon={faArrowLeft} />
               </Link>
             </div>

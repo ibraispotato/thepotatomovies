@@ -28,7 +28,7 @@
                 
                     <div className='allNav'>
                         <div className='upNav'>
-                            <Link to={"/thepotatomovies"}>
+                            <Link to={"/"}>
                                 <h2 className='potatomovies'>thePotomovies</h2>
                             </Link>
                         

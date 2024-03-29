@@ -30,7 +30,7 @@ import {useTextContexts} from "../../hooks/userContext"
                     < Loader />
                     :
                     <><div className="arrows">
-                        <Link to={"/thepotatomovies"}>
+                        <Link to={"/"}>
                             <FontAwesomeIcon className="arrow" icon={faArrowLeft} />
                         </Link>
                         

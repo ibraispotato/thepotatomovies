@@ -28,7 +28,7 @@ const Signups = () => {
             <div className='containerreg'>
                 <div className='left'>
                     <div className='Thearrows'>
-                         <Link to={"/thepotatomovies"}>
+                         <Link to={"/"}>
                                 <FontAwesomeIcon className="arrow" icon={faArrowLeft} />
                             </Link>
                     </div>

@@ -157,7 +157,7 @@ import { Link } from "react-router-dom";
               <div className="hero">
           <div className="smals">
           <div className="arrowse">
-          <Link to={"/thepotatomovies"}>
+          <Link to={"/"}>
             <FontAwesomeIcon className="arrow" icon={faArrowLeft} />
           </Link>
         </div>

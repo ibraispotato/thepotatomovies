@@ -21,7 +21,7 @@ const Forgot = () => {
                     </div>
                     <input className={`resetInput ${email.length>0? "green" : "red"}`} placeholder='Email' value={email}name='email'type='email' onChange={(e)=> setEmail(e.target.value)}/>
                     <div className='erorAndBtnReset'>
-                        {/* <Link to={error!==null? "/thepotatomovies" : console.log("d")}> */}
+                        {/* <Link to={error!==null? "/" : console.log("d")}> */}
                             <button className='submitbtn s' disabled={isLoading}>Submit</button>
                         {/* </Link> */}
                         

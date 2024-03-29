@@ -106,7 +106,7 @@ const Movies = () => {
               </Link>
             </div>
             <div className="arrows">
-              <Link to={"/thepotatomovies"}>
+              <Link to={"/"}>
                 <FontAwesomeIcon className="arrow" icon={faArrowLeft} />
               </Link>
               {/* <h1>Latest Movies:</h1> */}
