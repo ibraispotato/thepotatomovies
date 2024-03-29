@@ -27,7 +27,7 @@ app.use("/api/show",showRoutes)
 
 
 
-moongoose.connect("mongodb+srv://ibra:Salwa2743@cluster0.tkdjqfz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(() => {
+moongoose.connect(process.env.MONG_URI).then(() => {
     app.listen((process.env.PORT), () => {
         console.log(`connecting to ${process.env.PORT}`);
     })
