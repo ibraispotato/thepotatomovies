@@ -129,7 +129,7 @@ function FrontPage() {
   
 
     const showFavShow = async () => {
-      const response = await fetch("http://localhost:4000/api/favourite", {
+      const response = await fetch("https://thepotatomovies.onrender.com/api/favourite", {
             
         headers: { "Authorization": `Bearer ${user.token}` }
       })

@@ -15,7 +15,7 @@ export const ShowFun = () => {
             setError("you must be logged in")
             return
         }
-        const response = await fetch("http://localhost:4000/api/show", {
+        const response = await fetch("https://thepotatomovies.onrender.com/api/show", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -26,7 +26,7 @@ function FrontPage() {
   const { user } = useTextContexts()
   const {ShowFavFun, error,add,setError,setAdd,theId} = ShowFun()
   const showFavShow = async () => {
-    const response = await fetch("http://localhost:4000/api/show", {
+    const response = await fetch("https://thepotatomovies.onrender.com/api/show", {
         
         headers:{"Authorization": `Bearer ${user.token}`}
     })

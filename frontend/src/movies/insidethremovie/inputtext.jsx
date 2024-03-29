@@ -20,7 +20,7 @@ const Inputtext = ({id}) => {
     
         //////////////////////////////////
         const texters = { text } 
-        const response = await fetch("http://localhost:4000/api/comments", {
+        const response = await fetch("https://thepotatomovies.onrender.com/api/comments", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

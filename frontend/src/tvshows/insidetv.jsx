@@ -94,7 +94,7 @@ import { Link } from "react-router-dom";
     
  
    const TextShowns = async () => {
-    const response = await fetch("http://localhost:4000/api/comments", {
+    const response = await fetch("https://thepotatomovies.onrender.com/api/comments", {
       headers:{'Authorization': `Bearer ${id}`}
     })
     const json = await response.json()
@@ -109,7 +109,7 @@ import { Link } from "react-router-dom";
    
    }, [dispatch])
    const showFavShow = async () => {
-    const response = await fetch("http://localhost:4000/api/show", {
+    const response = await fetch("https://thepotatomovies.onrender.com/api/show", {
         
         headers:{"Authorization": `Bearer ${user.token}`}
     })
