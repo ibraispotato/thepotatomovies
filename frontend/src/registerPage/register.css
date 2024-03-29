@@ -277,9 +277,10 @@
     .solidReds{
         display: none;
     }
-    .left{
+    .left {
         width: 100%;
         padding: 10px;
+        margin-bottom: 80px;
     }
     .loginAndDontHaveAnAccount{
         display: flex;
@@ -321,7 +322,7 @@
         width: 100%;
     }
 }
-@media(min-width:900px){
+@media(min-width:700px){
     .left {
         display: flex;
         align-items: center;
@@ -370,6 +371,7 @@
         height: 100%;
     }
 }
+
 @media(min-width:1024px){
     .forgotdivs {
         width: 70%;

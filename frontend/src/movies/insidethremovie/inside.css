@@ -327,8 +327,8 @@ width: 1900px;
     .arrowse {
         display: flex;
         align-items: center;
-        margin-left: 50px;
-        margin-top: 0px;
+        margin-left: -20px;
+        margin-top: 30px;
         margin-bottom: 10px;
         gap: 60px;
     }
@@ -457,7 +457,7 @@ width: 1900px;
 @media(min-width:700px){
     .uphero {
         display: flex;
-        height: 130vh;
+        height: 100%;
         gap: 250px;
         flex-direction: column;
         /* align-content: space-between; */
@@ -465,6 +465,14 @@ width: 1900px;
    .textsAndinputs{
         gap: 20px;
    }
+   .arrowse {
+    display: flex;
+    align-items: center;
+    margin-left: -100px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    gap: 60px;
+}
     .iframs {
         width: 500px;
         
@@ -492,7 +500,14 @@ width: 1900px;
     }
 }
 @media(min-width:900px){
-    
+    /* .arrowse {
+        display: flex;
+        align-items: center;
+        margin-left: -200px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        gap: 60px;
+    } */
     .frontimgs {
         width: 100%;
         height: auto;
@@ -502,8 +517,11 @@ width: 1900px;
     }
     
     .iframs {
-        width: 400px;
-        height: 250px;
+        width: 300px;
+        height: 200px;
+    }
+    .thetitles {
+        text-align: justify;
     }
     .genrs {
         
@@ -517,8 +535,8 @@ width: 1900px;
     }
     .uphero {
         display: flex;
-        /* height: 20vh; */
-        gap: 350px;
+        height: 100%;
+        gap: 250px;
         flex-direction: column;
         /* align-content: space-between; */
     }
@@ -533,12 +551,20 @@ width: 1900px;
         flex-direction: column;
         gap: 10px;
         position: relative;
-        transform: translate(0, 30%);
+        transform: translate(0, 10%);
+    }
+    .arrowse {
+        display: flex;
+        align-items: center;
+        margin-left: 00px;
+        /* margin-top: 30px; */
+        margin-bottom: 10px;
+        gap: 60px;
     }
     .solidRedss {
         border: 1px solid rgb(0, 140, 255);
         width: 0%;
-        height: 300%;
+        height: 130%;
         z-index: 1;
     }
     .hero {
@@ -547,7 +573,7 @@ width: 1900px;
         align-items: center;
         flex-direction: row;
         justify-content: center;
-        height: 30vh;
+        height: 55vh;
         gap: 20px;
         margin-left: 10px;
         /* position: absolute; */
@@ -555,6 +581,23 @@ width: 1900px;
     }
 }
 @media(min-width:1024px){
+    .hero {
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        height: 180%;
+        gap: 20px;
+        margin-left: 10px;
+        /* position: absolute; */
+        margin-top: -100px;
+    }
+    .uphero {
+        gap: 400px;
+        height: 100%;
+    }
+    
     .alotOfTexts {
         display: flex;
         /* align-items: center; */
@@ -563,6 +606,14 @@ width: 1900px;
         gap: 10px;
         position: relative;
         transform: translate(0, 28%);
+    }
+    .arrowse {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        gap: 60px;
     }
     .title {
         background-color: #0000003b;
@@ -586,11 +637,7 @@ width: 1900px;
         margin-top: -275px;
         z-index: 10;
     }
-    .uphero {
-        gap: 650px;
-        height: 100vh;
-       
-    }
+    
     .theTextArea {
         padding: 5px 10px;
         width:fit-content;
@@ -635,9 +682,13 @@ width: 1900px;
     }
 }
 @media(min-width:1280px){
+    .iframs {
+        width: 450px;
+        height: 250px;
+    }
     .uphero {
-        gap: 440px;
-        height: 60vh;
+        gap: 200px;
+        height: 100%;
     }
     .theTextArea {
         padding: 5px 10px;
@@ -650,13 +701,9 @@ width: 1900px;
         width:fit-content;
         border-radius: 10px;
     }
-    .solidRedss {
-        border: 1px solid rgb(0, 140, 255);
-        width: 0%;
-        height: 240%;
-        z-index: 1;
+    .smallimg {
+        width: 280px;
     }
-   
     .genrs {
         width: 25%;
         padding: 7px;
@@ -670,11 +717,26 @@ width: 1900px;
         align-items: center;
         flex-direction: row;
         justify-content: center;
-        height: 50vh;
+        height: 100%;
         gap: 20px;
         margin-left: 10px;
         /* position: absolute; */
         margin-top: 0px;
+    }
+    .solidRedss {
+        border: 1px solid rgb(0, 140, 255);
+        width: 0%;
+        height: 700px;
+        z-index: 1;
+    }
+    .alotOfTexts {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        transform: translate(0, 28%);
     }
     .textsAndinputs {
 
@@ -719,15 +781,12 @@ width: 1900px;
     .solidRedss {
         border: 1px solid rgb(0, 140, 255);
         width: 0%;
-        height: 290%;
+        height: 100vh;
         z-index: 1;
     }
 }
 @media(min-width:1536px){
-    .uphero {
-        gap: 550px;
-        height: 60vh;
-    }
+   
     
         .upserss {
             margin-left: -1200px;
@@ -736,20 +795,7 @@ width: 1900px;
 }
 @media(min-width:1685px){
     .uphero {
-        gap: 670px;
-        height: 60vh;
-    }
-    .hero {
-        /* position: relative; */
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: center;
-        height: 50vh;
-        gap: 60px;
-        margin-left: 10px;
-        /* position: absolute; */
-        margin-top: 0px;
+        gap: 350px;
     }
     .smallimg {
         width: 350px;
@@ -775,7 +821,7 @@ width: 1900px;
 }
 @media(min-width:1921px){
     .uphero {
-        gap: 900px;
+        gap: 1000px;
         height: 60vh;
     }
     .containerText {
