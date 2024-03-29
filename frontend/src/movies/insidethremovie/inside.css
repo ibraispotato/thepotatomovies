@@ -302,10 +302,9 @@ width: 1900px;
     }
     .uphero {
         display: flex;
-        height: 130vh;
+        height: 100%;
         gap: 250px;
         flex-direction: column;
-        
     }
     .frontimgs{
         width: 1px;
@@ -329,7 +328,7 @@ width: 1900px;
         display: flex;
         align-items: center;
         margin-left: 50px;
-        margin-top: 54px;
+        margin-top: 0px;
         margin-bottom: 10px;
         gap: 60px;
     }
@@ -356,7 +355,7 @@ width: 1900px;
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        height: 200vh;
+        height: 100%;
         gap: 60px;
         margin-left: 10px;
         /* position: absolute; */
