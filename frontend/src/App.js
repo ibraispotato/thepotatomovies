@@ -38,7 +38,7 @@ function App() {
       
             <Routes>
              
-              <Route path="/" element={show ? <TrendShow setShow={setShow} /> : <TrendApi setShow={setShow} />} />
+              <Route path="/thepotatomovies" element={show ? <TrendShow setShow={setShow} /> : <TrendApi setShow={setShow} />} />
               <Route path="thepotatomovies/movie/:id" element={<InsideMovies />} />
               <Route path="/movies" element={<Movie />} />
               <Route path="/forgotpassword" element={<Forgot />} />
