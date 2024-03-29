@@ -16,7 +16,7 @@ import NavBar from "../../Nav/Nav"
         const length = trendAPi.length
         setTimeout(() => {
             setCurrent(current === length - 1 ? 0 : current + 1);
-            }, 100000);
+            }, 4000);
             setTimeout(() => {
                 setIsLoading(false)
                 }, 2000);
