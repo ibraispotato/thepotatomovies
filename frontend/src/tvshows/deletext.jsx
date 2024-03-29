@@ -10,7 +10,7 @@ const Deletebtn = ({ id }) => {
   const [hover, setHover] = useState(false);
   const { user } = useTextContexts()
     const deleteFav = async () => {
-        const response = await fetch(`https://thepotatomovies.onrender.com/api/comments/${id}`, {
+        const response = await fetch(`https://thepotatomovies-1.onrender.com/api/comments/${id}`, {
             method: 'DELETE',
             headers:{"Authorization": `Berare ${user.token}`}
         })

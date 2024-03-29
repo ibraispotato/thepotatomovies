@@ -79,7 +79,7 @@ const GetMovie = async () => {
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
  
   const TextShown = async () => {
-    const response = await fetch("https://thepotatomovies.onrender.com/api/comments", {
+    const response = await fetch("https://thepotatomovies-1.onrender.com/api/comments", {
       headers:{'Authorization': `Bearer ${id}`}
     })
     const json = await response.json()
@@ -95,7 +95,7 @@ const GetMovie = async () => {
    }, [dispatch])
    
    const showFavShow = async () => {
-    const response = await fetch("https://thepotatomovies.onrender.com/api/favourite", {
+    const response = await fetch("https://thepotatomovies-1.onrender.com/api/favourite", {
           
       headers: { "Authorization": `Bearer ${user.token}` }
     })

@@ -10,7 +10,7 @@ const Favorites = () => {
     const { ShowFav, dispatch } = Showhooks()
     const { user } = useTextContexts()
     const showFavShow = async () => {
-        const response = await fetch("https://thepotatomovies.onrender.com/api/show", {
+        const response = await fetch("https://thepotatomovies-1.onrender.com/api/show", {
             
             headers:{"Authorization": `Bearer ${!user?"":user.token}`}
         })

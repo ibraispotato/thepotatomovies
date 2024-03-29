@@ -14,7 +14,7 @@ export const ResetPassword = () => {
     const reset = async (password) => {
         setLoading(true)
         setError(null)
-        const response = await fetch(`https://thepotatomovies.onrender.com/api/register/resetpassword/${token}`, {
+        const response = await fetch(`https://thepotatomovies-1.onrender.com/api/register/resetpassword/${token}`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({password})

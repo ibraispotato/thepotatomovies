@@ -18,7 +18,7 @@ const Deletebtn = ({ id }) => {
   };
 
     const deleteFav = async () => {
-        const response = await fetch(`https://thepotatomovies.onrender.com/api/favourite/${id}`, {
+        const response = await fetch(`https://thepotatomovies-1.onrender.com/api/favourite/${id}`, {
             method: 'DELETE',
             headers:{"Authorization": `Berare ${user.token}`}
         })

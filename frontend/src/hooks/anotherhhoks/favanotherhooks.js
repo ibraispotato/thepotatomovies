@@ -16,7 +16,7 @@ export const FavFun = () => {
             setError("you must be logged in")
             return
         }
-        const response = await fetch("https://thepotatomovies.onrender.com/api/favourite", {
+        const response = await fetch("https://thepotatomovies-1.onrender.com/api/favourite", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

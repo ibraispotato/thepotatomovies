@@ -5,7 +5,7 @@ export const Logines = () => {
     const [isLoading,setLoading] = useState(null)
     const { dispatch } = useTextContexts()
     const FunLogins = async (email,password) => {
-        const response = await fetch("https://thepotatomovies.onrender.com/api/register/login", {
+        const response = await fetch("https://thepotatomovies-1.onrender.com/api/register/login", {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({email,password})

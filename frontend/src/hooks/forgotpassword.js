@@ -7,7 +7,7 @@ export const ForgotPass = () => {
     const [Res, setRes] = useState(null)
 
     const forgotpassword = async (email) => {
-        const response = await fetch("https://thepotatomovies.onrender.com/api/register/forgotpassword", {
+        const response = await fetch("https://thepotatomovies-1.onrender.com/api/register/forgotpassword", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({email})
