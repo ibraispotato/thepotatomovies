@@ -6,9 +6,9 @@ justify-content: center;
 height: 100vh;
 gap: 60px;
 }
-#frontimg{
-    filter: blur(5px);
-
+#frontimg {
+    filter: blur(10px);
+    opacity: 0.60;
 }
 .iframs{
 width: 500px;
@@ -107,7 +107,7 @@ width: 1900px;
     gap: 6px;
 }
 .overs{
-    background-color: rgba(0, 0, 0, 0.596);
+
     
     padding: 10px;
     font-size: 27px;
@@ -159,11 +159,11 @@ width: 1900px;
     gap: 20px;
 }
 .title{
-    background-color: rgba(0, 0, 0, 0.274);
+
     width: 10%;
 }
 .genrs {
-    background-color: rgba(0, 0, 0, 0.274);
+
     width: 18%;
     border-radius: 7px;
     padding: 5px 10px;
@@ -231,7 +231,7 @@ width: 1900px;
 .theTextArea{
     padding: 5px 10px;
     resize: none;
-    background-color: rgba(0, 0, 0, 0.315);
+
     border: none;
     outline: none;
     color: white;
@@ -262,7 +262,9 @@ width: 1900px;
     color: white;
     transition: 0.5s;
 }
-
+.theTextArea{
+    background-color: rgba(0, 0, 0, 0.315);
+}
 .submitRev:hover{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -276,7 +278,7 @@ width: 1900px;
         justify-content: center;
     }
     .overs {
-        background-color: rgba(0, 0, 0, 0.144);
+
         text-align: center;
     }
     .genrs {
@@ -400,7 +402,7 @@ width: 1900px;
     .theTextArea {
         padding: 5px 10px;
         resize: none;
-        background-color: rgba(0, 0, 0, 0.315);
+
         border: none;
         outline: none;
         color: white;
@@ -527,11 +529,17 @@ width: 1900px;
         
         justify-content:flex-start;
     }
+    .title {
+        width: 24%;
+        padding: 7px;
+        border-radius: 7px;
+        font-size: 35px;
+    }
     .overs {
         text-align: justify;
         width: 100%;
         border-radius: 10px;
-        font-size: 18px;
+        font-size: 22px;
     }
     .uphero {
         display: flex;
@@ -616,11 +624,10 @@ width: 1900px;
         gap: 60px;
     }
     .title {
-        background-color: #0000003b;
         width: 24%;
         padding: 7px;
         border-radius: 7px;
-        font-size: 20px;
+        font-size: 35px;
     }
     .iframs {
         width: 400px;
@@ -708,7 +715,7 @@ width: 1900px;
         width: 25%;
         padding: 7px;
         border-radius: 7px;
-        background-color: rgba(0, 0, 0, 0.315);
+
     }
     
     .hero {
@@ -804,11 +811,11 @@ width: 1900px;
         gap: 240px;
     }
     .title {
-        background-color: rgba(0, 0, 0, 0.274);
+
         width: 23%;
     }
     .genrs{
-        background-color: rgba(0, 0, 0, 0.274);
+
         width:18%;
         border-radius: 7px;
     }
@@ -816,7 +823,7 @@ width: 1900px;
         text-align: justify;
         width: 100%;
         border-radius: 10px;
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 @media(min-width:1921px){

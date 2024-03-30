@@ -52,8 +52,11 @@
         opacity: 1;
         transition-duration:1s ;
         /* transform:translateX(100px); */
-        filter: blur(5px);
-            
+      
+       
+            filter: blur(10px);
+            opacity: 0.60;
+        
     }
     .texts.active{
         opacity: 1;
@@ -211,7 +214,7 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            background-color: rgba(0, 0, 0, 0.356);
+            
         }
         .dis {
         height: 30px;
@@ -277,7 +280,7 @@
             }
             .trendText{
                 font-size: 13px;
-                background-color: rgba(0, 0, 0, 0.253);
+
                 padding: 6px;
                 border-radius: 5px;
             }
@@ -434,7 +437,7 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            background-color: rgba(0, 0, 0, 0.26);
+           
             border-radius: 10px;
         }
         .readMoreBtn {
@@ -551,7 +554,6 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            background-color: rgba(0, 0, 0, 0.26);
             border-radius: 10px;
         }
         .solidBluees {
@@ -650,17 +652,17 @@
         
        
         .out {
-            margin-top: 169px;
+            margin-top: 139px;
             width: 100%;
         }
-        .texts.active{
+        .texts.active {
             position: relative;
             display: flex;
             align-content: center;
             justify-content: center;
-            height: 30vh;
+            height: 50vh;
             /* margin-left: 70px; */
-            }
+        }
           
             .clickOne {
                 display: flex;
@@ -696,7 +698,6 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            background-color: rgba(0, 0, 0, 0.26);
             border-radius: 10px;
         }
         .clickOne {
@@ -768,14 +769,14 @@
             margin-left: 239px;
             margin: 20px -0 20px -151px;
         }
-        .texts.active{
+        .texts.active {
             position: relative;
             display: flex;
             align-content: center;
             justify-content: center;
-            height: 40vh;
+            height: 60vh;
             margin-left: 20px;
-            }
+        }
             .over {
                 font-size: 20px;
                 width: 700px;
@@ -786,7 +787,6 @@
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                background-color: rgba(0, 0, 0, 0.26);
                 border-radius: 10px;
             }
             .someofRating {
@@ -906,7 +906,7 @@
             z-index: 10;
         }
         .out {
-            /* margin-top: -60px; */
+            margin-top: 90px;
             width: 100%;
         }
     }
@@ -1005,7 +1005,7 @@
             width: 80%;
         }
         .out {
-            margin-top: 350px;
+            margin-top: 200px;
             width: 100%;
         }
         .im {
@@ -1013,6 +1013,10 @@
         }
     }
     @media(min-width:1024px){
+        .out {
+            margin-top: 250px;
+            width: 100%;
+        }
         .outsidewrapT {
             margin-left: 98px;
             width: 100%;
@@ -1077,7 +1081,6 @@
             white-space: normal;
             overflow: normal;
             text-overflow: normal;
-            background-color: rgba(0, 0, 0, 0.26);
             border-radius: 10px;
         }
         .texts.active {
@@ -1085,7 +1088,7 @@
             display: flex;
             align-content: center;
             justify-content: center;
-            height: 50vh;
+            height: 70vh;
             margin-left: 20px;
             gap: 20px;
         }
@@ -1117,9 +1120,9 @@
             z-index: 10;
         }
         .trendText {
-            font-size: 17px;
-            background-color: rgba(0, 0, 0, 0.253);
-            padding: 6px;
+            font-size: 22px;
+
+            padding: 0px;
             border-radius: 5px;
         }
         .solidRed {
@@ -1214,6 +1217,19 @@
             display: flex;
             gap: 30px;
         }
+        .texts.active {
+            position: relative;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            height: 100vh;
+            margin-left: 20px;
+            gap: 20px;
+        }
+        .out {
+            margin-top: 100px;
+           
+        }
     }
     @media(min-width:1484px){
         .readMoreBtn {
@@ -1243,8 +1259,8 @@
             transform: translate(0%);
         }
         .out {
-            margin-top: 450px;
-            width: 100%;
+            margin-top: 120px;
+           
         }
     }
     @media(min-width:1716px){
@@ -1361,7 +1377,6 @@
             white-space: normal;
             overflow: normal;
             text-overflow: normal;
-            background-color: rgba(0, 0, 0, 0.26);
             border-radius: 10px;
         }
         .dis {
