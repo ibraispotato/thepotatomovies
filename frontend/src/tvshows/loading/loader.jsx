@@ -9,7 +9,7 @@ const Loader = () => {
             
             <PuffLoader
     color="#f20a2d"
-  size={200}
+  size={300}
 />
                 
                 {/* < Movies /> */}

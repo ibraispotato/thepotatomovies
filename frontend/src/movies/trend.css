@@ -184,6 +184,18 @@
             border: 2px solid rgb(0, 153, 255);
             height: 20px;
         }
+        .loads {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            left: 35%;
+            /* top: 40%; */
+            height: 100vh;
+            /* width: 100%; */
+            /* font-size: 100px; */
+            color: yellow;
+        }
         .btnwarin {
             padding: 25px;
             height: 100%;
@@ -671,7 +683,18 @@
             }
     }
     @media(min-width:700px){
-        
+        .loads{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            left: 45%;
+            /* top: 40%; */
+            height: 100vh;
+            /* width: 100%; */
+            /* font-size: 100px; */
+            color: yellow;
+        }
         .upsers {
             margin-left: 239px;
             margin: 20px -0 20px -82px;
@@ -1094,6 +1117,18 @@
         }
     }
     @media(min-width:1280px){
+        .load {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            left: 40%;
+            /* top: 40%; */
+            height: 100vh;
+            /* width: 100%; */
+            /* font-size: 100px; */
+            color: yellow;
+        }
         .textso {
             width: auto;
             font-size: 19px;
