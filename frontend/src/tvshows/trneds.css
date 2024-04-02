@@ -5,7 +5,7 @@
     border: 1px solid rgb(0, 153, 255);
         height: 60%;
 }
-.load {
+.loading {
     display: flex;
     align-items: center;
     justify-content: center;

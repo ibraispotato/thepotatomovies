@@ -4,7 +4,7 @@ import { PuffLoader} from "react-spinners";
 const Loader = () => {
     return (
         <div>
-                <div className="loads">
+                <div className="loading">
             < loader />
             
             <PuffLoader
