@@ -63,7 +63,7 @@ const Login = () => {
                                     e.preventDefault()
                                     return false;
                                 }}
-                                className='submitbtn'>Submit</button>
+                                className='submitbtn'><span>Submit</span></button>
                              <Link to={'/forgotpassword'}>
                             <p >Forgot Password?</p>
                             </Link>
