@@ -35,9 +35,7 @@ function App() {
       <Router>
        {/* <NavBar /> */}
       <GetContext>
-      
             <Routes>
-             
               <Route path="/" element={show ? <TrendShow setShow={setShow} /> : <TrendApi setShow={setShow} />} />
               <Route path="/movie/:id" element={<InsideMovies />} />
               <Route path="/movies" element={<Movie />} />

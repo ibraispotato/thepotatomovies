@@ -1,19 +1,17 @@
 import React, { useState } from 'react'
 import {useTextContexts} from "./userContext"
+
 export const Signup = () => {
     const [error,setError] = useState(null)
     const [isLoading,setLoading] = useState(null)
-    const { dispatch, user } = useTextContexts()
-  
+    const { dispatch } = useTextContexts()
     const signups = async (username,email,password) => {
-        setLoading(true)
-        setError(null)
+        
         const response = await fetch("https://thepotatomovies-1.onrender.com/api/register/signup", {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({username,email,password})
         })
-        (response)
         const json = await response.json()
         if (!response.ok) {
             setLoading(false)
@@ -26,6 +24,4 @@ export const Signup = () => {
         }
     }
     return {signups,isLoading,error}
-   
 }
-

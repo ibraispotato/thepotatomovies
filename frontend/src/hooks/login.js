@@ -11,7 +11,6 @@ export const Logines = () => {
             body: JSON.stringify({email,password})
         })
         const json = await response.json()
-        
         if (!response.ok) {
             setLoading(false)
             setError(json.error)
@@ -23,6 +22,4 @@ export const Logines = () => {
         }
     }
     return {FunLogins,isLoading,error}
-   
 }
-

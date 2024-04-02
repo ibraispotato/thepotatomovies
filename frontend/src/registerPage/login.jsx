@@ -55,9 +55,9 @@ const Login = () => {
                 <input className={`inputers ${password.length>0? "green" : "red"}`} value={password} placeholder='Password' name='password' type='password' onChange={(e) => setPassword(e.target.value)} />
                         </div>
                         <div className='btngers'>
-                            <button className='submitbtn'>Submit</button>
+                            <button disabled={isLoading} className='submitbtn'>Submit</button>
                              <Link to={'/forgotpassword'}>
-                            <p disabled={isLoading}>Forgot Password?</p>
+                            <p >Forgot Password?</p>
                             </Link>
                             
                         </div>
