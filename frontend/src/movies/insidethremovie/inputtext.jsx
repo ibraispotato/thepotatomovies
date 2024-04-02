@@ -7,7 +7,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
 const Inputtext = ({id}) => {
     const [text, setText] = useState('')
-    const textReq =300
+    const textReq =150
     const [error, seterror] = useState(null)
     const { dispatch } = useTextContext()
     const { user } = useTextContexts()
@@ -49,7 +49,7 @@ const Inputtext = ({id}) => {
     return (
         <div className='containerText'>
             <div className='textreq'>
-                {text.length<300?
+                {text.length<150?
                     <>
                         <p className='reqChara'>Required characters:</p>
                         <p className='textReqRed'>{textReq - text.length}</p>
@@ -59,7 +59,7 @@ const Inputtext = ({id}) => {
                 }
             </div>
             <form className='formEdit' onSubmit={textReq<text.length? HandleChange: hanldeerror}>
-                <textarea className={`theTextArea ${text.length<300 ? "red" : "green"}`}  rows="10" cols="50"type='text' value={text} placeholder='Write your review here' onChange={(e) => setText(e.target.value)} />
+                <textarea className={`theTextArea ${text.length<150 ? "red" : "green"}`}  rows="10" cols="50"type='text' value={text} placeholder='Write your review here' onChange={(e) => setText(e.target.value)} />
                 {error && <p className='errorInsideMovie'>{error}</p>}
                 <button className='submitRev'>Submit</button>
                 

@@ -278,9 +278,9 @@
         display: none;
     }
     .left {
-        width: 100%;
+        width: auto;
         padding: 10px;
-        margin-bottom: 80px;
+        margin-bottom: 120px;
     }
     .loginAndDontHaveAnAccount{
         display: flex;

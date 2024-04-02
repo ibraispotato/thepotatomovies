@@ -23,7 +23,8 @@ const Login = () => {
     const LoginSubmit = async (e) => {
         e.preventDefault()
         await FunLogins(email,password)
-        }
+    }
+    
     return (
         <div className='containerreg'>
             <div className='left'>
@@ -56,14 +57,7 @@ const Login = () => {
                         </div>
                         <div className='btngers'>
                             <button disabled={isLoading}
-                            onPaste={(e)=>{
-                                e.preventDefault()
-                                return false;
-                                }} onCopy={(e) => {
-                                    e.preventDefault()
-                                    return false;
-                                }}
-                                className='submitbtn'><span>Submit</span></button>
+                                className='submitbtn'><span>{"Submit"}</span></button>
                              <Link to={'/forgotpassword'}>
                             <p >Forgot Password?</p>
                             </Link>

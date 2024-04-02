@@ -285,6 +285,13 @@ top: 5%;
         margin-left: -70px;
 
     }
+    .theh1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transform: translate(0, 700%);
+    }
 }
 @media(min-width:425px){
     .upserss {
