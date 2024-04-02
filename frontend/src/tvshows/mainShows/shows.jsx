@@ -13,7 +13,8 @@ import { ShowFun } from "../../hooks/anotherhhoks/anothershowFav"
 import { useStateContext } from '../../context/getcontext'
 import FilterYears from "../../movies/filteryears/filterYears";
 import {Showhooks} from "../../hooks/showfav.js"
-import {useTextContexts} from "../../hooks/userContext.js"
+import { useTextContexts } from "../../hooks/userContext.js"
+import Nav from "../../Nav/NavShows.jsx"
 const Movies = () => {
     const [movieApi, setMovieApi] = useState([])
     const [text, setText] = useState("")
@@ -97,12 +98,14 @@ const Movies = () => {
         
         < Loader  />
         :
-        <div className="fogWaT7t">
+        <>
+          <Nav />
+          <div className="fogWaT7t">
           <div className="fog">
             <div className="input">
-              <input type="text" onChange={(e) => setText(e.target.value) } value={text} className="in" placeholder="Search" />
+              <input type="text" onChange={(e) => setText(e.target.value)} value={text} className="in" placeholder="Search" />
               <Link to={`/series/${text}`}>
-              <button className="btners">Search</button>
+                <button className="btners">Search</button>
               </Link>
             </div>
             <div className="arrows">
@@ -115,22 +118,22 @@ const Movies = () => {
               <button className={`bobo ${gener === 0 ? "active" : ""}`} onClick={() => setGener(0)}>All</button>
               {tvgeners.map(data => (
                 <div className="alotbtn">
-                                <Link to={`/series/gener/${data.id}`}>
-                  <button key={data.id} className={`bobo ${gener === data.id ? "active" : ""}`} onClick={() => setGener(data.id)}>{data.name}</button>
+                  <Link to={`/series/gener/${data.id}`}>
+                    <button key={data.id} className={`bobo ${gener === data.id ? "active" : ""}`} onClick={() => setGener(data.id)}>{data.name}</button>
                   </Link>
-                  
-                    <div>
-                  
+
+                  <div>
+
                   </div>
                 </div>
-                
+
               ))}
-             
-                < FilterYears text={text} setNumber={setNumber} setYear={setYear} gener={gener} />
-                
+
+              <FilterYears text={text} setNumber={setNumber} setYear={setYear} gener={gener} />
+
             </div>
-          
-            
+
+
           </div>
           <div className="t7t">
             {movieApi.map((data, index) => (
@@ -141,48 +144,48 @@ const Movies = () => {
                       <img alt="" loading="preload" className="imm" src={`https://image.tmdb.org/t/p/w200/${data.poster_path}`} />
                     </div>
                   </Link>
-                        
+
                   <div className="upo">
-                                    <div className="wishlist">
+                    <div className="wishlist">
                       <div className="heartsandbooks">
-                                    
+
                         <FontAwesomeIcon
-                           className={`heart ${theId.includes((data.id).toString()) ? "clicked" : ""}`}
+                          className={`heart ${theId.includes((data.id).toString()) ? "clicked" : ""}`}
                           onClick={() => ShowFavFun(data)} icon={faHeart} />
+                      </div>
                     </div>
-                                </div>
-                                    <div className="sta">
-                                          <FontAwesomeIcon className="stars" icon={faStar} />
-                                    <p className="rarr">{(data.vote_average).toFixed(1)}/10</p>
-                                    
-                                </div>
-                          
-                                
-                                </div>
+                    <div className="sta">
+                      <FontAwesomeIcon className="stars" icon={faStar} />
+                      <p className="rarr">{(data.vote_average).toFixed(1)}/10</p>
+
+                    </div>
+
+
+                  </div>
                   <Link to={`show/${data.id}`}>
                     <div>
-                  
+
                       <p className="mr">{data.title || data.original_name}</p>
                     </div>
                   </Link>
                 </div>
-                    
+
               </>
             ))}
-                
+
           </div>
-        
+
           <div className="nums">
-            
-            <button className="one" id="minus" onClick={()=>setNumber(prev => prev === 1 ? 1 : --prev)}>prev</button>
-          
-          
-          <p className="oneer">{number}</p>
-        
-            <button className="one" id="plus"   onClick={() => setNumber(prev => ++prev)}>next</button>
-            
-        </div>
-        </div>
+
+            <button className="one" id="minus" onClick={() => setNumber(prev => prev === 1 ? 1 : --prev)}>prev</button>
+
+
+            <p className="oneer">{number}</p>
+
+            <button className="one" id="plus" onClick={() => setNumber(prev => ++prev)}>next</button>
+
+          </div>
+        </div></>
       }
       <div className={`theError ${error === null ? "notShow" :"show"}`}>
           {<h3 className="errtext">{error}</h3>}

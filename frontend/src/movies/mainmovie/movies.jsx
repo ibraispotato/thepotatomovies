@@ -10,7 +10,7 @@ import { FavFun } from "../../hooks/anotherhhoks/favanotherhooks"
 import { faX } from '@fortawesome/free-solid-svg-icons'
 import {useTextContexts} from "../../hooks/userContext.js"
 import { FavorHook } from "../../hooks/fav.js"
-
+import Nav from "../../Nav/Nav.jsx"
 import "../movie.css"
 const MAinMovies = () => {
   const { user } = useTextContexts()
@@ -120,14 +120,15 @@ useEffect(() => {
         
           < Loader />
   :
-        <><div className="fogWaT7t">
+        <>
+          <Nav />
+          <div className="fogWaT7t">
           <div className="fog">
             <div className="input">
               <input type="text" onChange={(e) => setText(e.target.value)} value={text} className="in" placeholder="Search......" />
               <Link to={`/movies/${text}`}>
                 <button className="btners">Search</button>
               </Link>
-
             </div>
             <div className="arrows">
               <Link to={"/"}>
