@@ -26,17 +26,24 @@ const InsideMovies = () => {
   const [GetAPiByIds, setGetAPiByIds] = useState([])
   const [GetMAPiByIds, setGetMAPiByIds] = useState([])
   const { dispatch:TheFavDis } = FavorHook()
-
+console.log(GetMAPiByIds)
   const [isLoading, setIsLoading] = useState(true);
   const { dispatch, review} = useTextContext()
     const GetAPiByIdser = async () => {
-      const key = "01a50d90a609598da2b24813512d62da"
+      const options = {
+        method: 'GET',
+        headers: {
+          accept: 'application/json',
+          Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMWE1MGQ5MGE2MDk1OThkYTJiMjQ4MTM1MTJkNjJkYSIsInN1YiI6IjY1NzJlMmRiNTViYzM1MDBhZDQ1OWUxNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.za6TLqZJUsnND9IzMgmNlCs9YQuN6rUB3e7_XHmzmds'
+        }
+      };
+     
       try {
-          await fetch(`${GetApiById}/${id}?api_key=${key}`)
+          await fetch(`https://api.themoviedb.org/3/movie/${id}?language=en-US'`,options)
         .then(response => response.json())
-        .then(response => { setGetAPiByIds(response); setTimeout(() => {
+        .then(response => { setGetAPiByIds(response);   setTimeout(() => {
           setIsLoading(false)
-             }, 2000);
+            }, 1000);
         })
       }catch (err) {
         console.log(err.messege)
@@ -59,7 +66,7 @@ const GetMovie = async () => {
   try {
       await fetch(`https://api.themoviedb.org/3/movie/${id}/videos?language=en-US`,options)
     .then(response => response.json())
-    .then(response => { setGetMAPiByIds(response.results); 
+    .then(response => { setGetMAPiByIds(response?.results); 
     })
   }catch (err) {
     console.log(err.messege)
@@ -72,10 +79,10 @@ const GetMovie = async () => {
   },[])
   const aname = GetMAPiByIds?.map(res =>res)
   const filter = aname?.filter((item) => {
-    return  item.type.includes("Trailer") & item.name.includes((item.name.includes(GetAPiByIds.title)?GetAPiByIds.title :"Trailer" )) && item.official===true
+    return  item?.type?.includes("Trailer") & item?.name?.includes((item?.name?.includes(GetAPiByIds?.title)?GetAPiByIds?.title :"Trailer" )) && item?.official===true
   })
-  const all = filter.slice(0,1)
-  const finish = all.map(res=>res.key)
+  const all = filter?.slice(0,1)
+  const finish = all?.map(res=>res.key)
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
  
   const TextShown = async () => {
@@ -137,7 +144,7 @@ useEffect(() => {
       {isLoading ? <Loader /> :
         <>
           <>
-              <img className="frontimgs" id="frontimg" loading="preload" src={`https://image.tmdb.org/t/p/original/${GetAPiByIds.backdrop_path}`} alt="" />
+              <img className="frontimgs" id="frontimg" loading="preload" src={`https://image.tmdb.org/t/p/original/${GetAPiByIds?.backdrop_path}`} alt="" />
               <div className="uphero">
               
               <div className="hero">
@@ -148,19 +155,19 @@ useEffect(() => {
           </Link>
         </div>
             <div className="smal">
-              <img className="smallimg" loading="preload" src={`https://image.tmdb.org/t/p/w500/${GetAPiByIds.poster_path}`} alt="" />
+              <img className="smallimg" loading="preload" src={`https://image.tmdb.org/t/p/w500/${GetAPiByIds?.poster_path}`} alt="" />
               <div className="rarings">
                 <div className="upe">
                   <div className="wishlist">
                     <div className="heartsandbooks">
                             <FontAwesomeIcon
-                               className={`heart ${theId.includes((GetAPiByIds.id).toString()) ? "clicked" : ""}`}
+                               className={`heart ${theId.includes((GetAPiByIds?.id)?.toString()) ? "clicked" : ""}`}
                               onClick={() =>favFunction(GetAPiByIds)} icon={faHeart} />
                     </div>
                   </div>
                   <div className="sta">
                     <FontAwesomeIcon className="stars" icon={faStar} />
-                    <p className="rarr">{(GetAPiByIds.vote_average).toFixed(1)}/10</p>
+                    <p className="rarr">{(GetAPiByIds?.vote_average)?.toFixed(1)}/10</p>
                   </div>
                 </div>
               </div>
@@ -171,20 +178,20 @@ useEffect(() => {
               <div className="AlltextsAndInputs">
           <div className="alotOfTexts">
             <div className="thetitles">
-              <h1 className="title">{GetAPiByIds.original_title || GetAPiByIds.title}</h1>
+              <h1 className="title">{GetAPiByIds?.original_title || GetAPiByIds?.title}</h1>
             </div>
             <div className="genrs">
-              <p>{GetAPiByIds.genres?.[0].name}</p>
-              <p>{GetAPiByIds.genres.length === 1 ? "" : <p>&</p>}</p>
-              <p>{GetAPiByIds.genres.length === 1 ? "" : GetAPiByIds.genres?.[1].name}</p>
+              <p>{GetAPiByIds?.genres?.[0].name}</p>
+              <p>{GetAPiByIds?.genres?.length === 1 ? "" : <p>&</p>}</p>
+              <p>{GetAPiByIds?.genres?.length === 1 ? "" : GetAPiByIds?.genres?.[1].name}</p>
               <div className="dates">
                 <p className="dot">•</p>
-                <p>{parseInt(GetAPiByIds.release_date)}</p>
+                <p>{parseInt(GetAPiByIds?.release_date)}</p>
                 <p className="dot">•</p>
               </div>
             </div>
             <div className="overview">
-              <p className="overs">{GetAPiByIds.overview}</p>
+              <p className="overs">{GetAPiByIds?.overview}</p>
                     </div>
                     <div className="video">
                       <iframe src={`https://www.youtube.com/embed/${finish}`} title="title" className="iframs" allow="fullscreen;" />
@@ -199,17 +206,17 @@ useEffect(() => {
                 <div className="textsAndinputs">
                 <InputText id={id} />
                 <div className="theAllinputText">
-                  {review&&review.map((data, index) => (
+                  {review&&review?.map((data, index) => (
                     <div className="nameAndTextAndRaiting">
                       <div>
                         <h2>{data.theNameOfTheReview}</h2>
                         <p className="textpara">{data.text}</p>
                         <p>{"Made at "+formatDistanceToNow(new Date(data.createdAt), { addSuffix: true })}</p>
                         <div className="trashbtn">
-                        {user===null ?"":user.user_ids ==="65fdd58866ecdb17973dcb64"?
-                        user.user_ids === "65fdd58866ecdb17973dcb64" ? <TheBtnTrash id={data._id} /> : ""
+                        {user===null ?"":user?.user_ids ==="65fdd58866ecdb17973dcb64"?
+                        user?.user_ids === "65fdd58866ecdb17973dcb64" ? <TheBtnTrash id={data?._id} /> : ""
                         :
-                      data.TheTokenOfTheUser === user.user_ids ? <TheBtnTrash id={data._id} /> : ""
+                      data.TheTokenOfTheUser === user?.user_ids ? <TheBtnTrash id={data?._id} /> : ""
                       
                           }
                           </div>
